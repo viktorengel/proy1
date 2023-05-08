@@ -1,2 +1,0 @@
-<h1>Acerca de nosotros</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum beatae, obcaecati sit, laboriosam reprehenderit voluptates deserunt tempore veritatis quos ea consectetur voluptatum saepe neque facere quibusdam sint minima odio.Architecto numquam obcaecati maxime tenetur iste doloremque. Molestias maiores perspiciatis, neque, sunt ducimus in nulla excepturi eum totam itaque veniam consequatur facere reprehenderit voluptatum eligendi officiis adipisci modi, dolores mollitia.</p>

@@ -28,9 +28,9 @@
                 Nosotros
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">IEP</a></li>
-                <li><a class="dropdown-item" href="#">Historia</a></li>
-                <li><a class="dropdown-item" href="#">Autoridades</a></li>
+                <li><a class="dropdown-item" href="/intro">Intro</a></li>
+                <li><a class="dropdown-item" href="/historia">Historia</a></li>
+                <li><a class="dropdown-item" href="/autoridades">Autoridades</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">-</a></li>
               </ul>
@@ -40,33 +40,33 @@
                 Institución
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Datos Informativos</a></li>
-                <li><a class="dropdown-item" href="#">Simbolos IEP</a></li>
-                <li><a class="dropdown-item" href="#">Uniformes IEP</a></li>
-                <li><a class="dropdown-item" href="#">Instalaciones</a></li>
+                <li><a class="dropdown-item" href="/datos">Datos Informativos</a></li>
+                <li><a class="dropdown-item" href="simbolos">Simbolos IEP</a></li>
+                <li><a class="dropdown-item" href="/uniformes">Uniformes IEP</a></li>
+                <li><a class="dropdown-item" href="/instalaciones">Instalaciones</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">-</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nosotros
+                Académico
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Entorno Virtual</a></li>
-                <li><a class="dropdown-item" href="#">Sistema de Notas</a></li>
-                <li><a class="dropdown-item" href="#">Calificaciones</a></li>
-                <li><a class="dropdown-item" href="#">Horario de clases</a></li>
-                <li><a class="dropdown-item" href="#">Oferta Académica</a></li>
-                <li><a class="dropdown-item" href="#">Consejo Estudiantil</a></li>
-                <li><a class="dropdown-item" href="#">DECE</a></li>
+                <li><a class="dropdown-item" href="/eva">EVA</a></li>
+                <li><a class="dropdown-item" href="/sysNotas">Sistema de Notas</a></li>
+                <li><a class="dropdown-item" href="/calif">Calificaciones</a></li>
+                <li><a class="dropdown-item" href="/horario">Horario de clases</a></li>
+                <li><a class="dropdown-item" href="/ofertaAcademica">Oferta Académica</a></li>
+                <li><a class="dropdown-item" href="/consejoEst">Consejo Estudiantil</a></li>
+                <li><a class="dropdown-item" href="/dece">DECE</a></li>
                 <li><a class="dropdown-item" href="#">-</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">-</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contactenos</a>
+              <a class="nav-link" href="/contactenos">Contactenos</a>
             </li>
             {{-- <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>

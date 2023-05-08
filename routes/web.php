@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hola', function () {
+/* Route::get('/hola', function () {
     return view('welcome');
-});
+}); */
 
 //Closure
 /* Route::get('/saludo', function(){
@@ -33,15 +33,37 @@ Route::get("/docs/9.x", function (){
  }); */
 
  //return con view
- Route::get("/nosotros",function (){
-    return view("acercade");
+/*  Route::get("/nosotros",function (){
+    return view("nosotros");
  });
 
  Route::get("/productos", function(){
     return view("misproductos");
  });
+ */
+//Rutas con controlador
 
- //Rutas con controlador
- Route::get("/servicios", [PaginaController::class, "misServicios"]);
+Route::get("/", [PaginaController::class,"inicio"]);
+ 
+//Nosotros
+Route::get("/intro", [PaginaController::class,"intro"]);
+Route::get("/historia", [PaginaController::class,"historia"]);
+Route::get("/autoridades", [PaginaController::class,"autoridades"]);
 
- Route::get("/", [PaginaController::class,"inicio"]);
+//Institución
+Route::get("/datos", [PaginaController::class,"datos"]);
+Route::get("/simbolos", [PaginaController::class,"simbolos"]);
+Route::get("/uniformes", [PaginaController::class,"uniformes"]);
+Route::get("/instalaciones", [PaginaController::class,"instalaciones"]);
+
+//Académico
+Route::get("/eva", [PaginaController::class,"eva"]);
+Route::get("/sysNotas", [PaginaController::class,"sysNotas"]);
+Route::get("/calif", [PaginaController::class,"calif"]);
+Route::get("/horario", [PaginaController::class,"horario"]);
+Route::get("/ofertaAcademica", [PaginaController::class,"ofertaAcademica"]);
+Route::get("/consejoEst", [PaginaController::class,"consejoEst"]);
+Route::get("/dece", [PaginaController::class,"dece"]);
+
+//Contactenos
+Route::get("/contactenos", [PaginaController::class, "contactenos"]);
