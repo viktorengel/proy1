@@ -19,18 +19,18 @@ Route::get('/hola', function () {
 });
 
 //Closure
-Route::get('/saludo', function(){
+/* Route::get('/saludo', function(){
     return "Hola mundo desde web.php";
 });
 
 Route::get("/docs/9.x", function (){
    return "Laravel version 9.x";
-});
+}); */
 
 //Para recibir datos por URL
-Route::get("/docs/{version}", function ($ver){
+/* Route::get("/docs/{version}", function ($ver){
     return "Laravel version $ver";
- });
+ }); */
 
  //return con view
  Route::get("/nosotros",function (){

@@ -9,7 +9,7 @@ class PaginaController extends Controller
     public function inicio()
     {
         # code...
-        return view("miInicio");
+        return view("InicioIEP");
     }
 
     public function acercadenosotros()
