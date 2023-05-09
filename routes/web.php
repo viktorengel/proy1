@@ -41,6 +41,7 @@ Route::get("/docs/9.x", function (){
     return view("misproductos");
  });
  */
+
 //Rutas con controlador
 
 Route::get("/", [PaginaController::class,"inicio"]);
