@@ -8,7 +8,20 @@ class PaginaController extends Controller
 {
     public function inicio()
     {
-        return view("inicio");
+        $titulo = "Realizado por Víctor";
+        $imagenes = [
+        "https://thumbs.dreamstime.com/z/mapa-y-bandera-de-ecuador-en-sello-de-goma-del-vintage-de-92497752.jpg",
+        "https://st.depositphotos.com/1031343/3088/v/950/depositphotos_30888379-stock-illustration-ecuador-stamp.jpg",
+        "https://previews.123rf.com/images/vector3dgraphics/vector3dgraphics1612/vector3dgraphics161200100/68697860-ecuador-sello-rep%C3%BAblica-de-la-bandera-de-ecuador-art-vectorial.jpg"];
+
+        //Envio de información de controlador a la vista
+
+        //return view("inicio",["titulo" => $titulo,"imagenes" => $imagenes]);
+        //return view("inicio", compact("titulo","imagenes"));
+
+        //Para mensajes pequeño ó alertas
+
+        return view("inicio")->with("titulo", $titulo)->with("imagenes", $imagenes);
     }
 
 //Nosotros

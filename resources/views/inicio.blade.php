@@ -3,7 +3,32 @@
 @section('principal')
 <h1>Home Page Laravel</h1>
 
-<div id="carouselExample" class="carousel slide">
+<h2>{{ $titulo }}</h2>
+
+<h3>{{ $imagenes[0] }}</h3>
+
+{{ count($imagenes) }}
+
+@if (count($imagenes)>0)
+
+<table border="2">
+  <tr>
+    @foreach ($imagenes as $img)
+    <td>
+      <img src="{{ $img }}" alt="" width="150">
+    </td>
+    @endforeach
+  </tr>
+  @endif
+</table>
+
+@php
+    $prueba = "Un valor";
+
+    echo $prueba;
+@endphp
+
+{{-- <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://img.freepik.com/vector-premium/banner-diseno-colorido-azul-oscuro-digital-tecnologia-red_181182-33509.jpg" class="d-block w-100" alt="...">
@@ -23,7 +48,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> --}}
 
 
 @endsection
