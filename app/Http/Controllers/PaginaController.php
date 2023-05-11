@@ -8,7 +8,7 @@ class PaginaController extends Controller
 {
     public function inicio()
     {
-        $titulo = "Mi pagina de inicio";
+        $titulo = "Institución Educativa Pomasqui";
 
         $imagenes = ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Coat_of_arms_of_Ecuador.svg/500px-Coat_of_arms_of_Ecuador.svg.png","https://previews.123rf.com/images/vector3dgraphics/vector3dgraphics1612/vector3dgraphics161200100/68697860-ecuador-sello-rep%C3%BAblica-de-la-bandera-de-ecuador-art-vectorial.jpg","https://images.freeimages.com/vhq/images/istock/previews/6226/62261462-seal-of-ecuador.jpg"];
 
@@ -18,7 +18,6 @@ class PaginaController extends Controller
 
         return view("inicio")->with("titulo", $titulo)->with("imagenes", $imagenes);
 
-        
     }
 
 //Nosotros

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg" style="background-color: #a6bfcf;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="{{ asset ('logoIEP.png') }}" alt="IEP" width="65" height="60">
@@ -64,8 +64,8 @@
           </li> --}}
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
     </div>
