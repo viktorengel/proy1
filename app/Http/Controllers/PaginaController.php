@@ -8,6 +8,7 @@ class PaginaController extends Controller
 {
     public function inicio()
     {
+<<<<<<< HEAD
         $titulo = "Mi pagina de inicio";
 
         $imagen = ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Coat_of_arms_of_Ecuador.svg/500px-Coat_of_arms_of_Ecuador.svg.png","https://previews.123rf.com/images/vector3dgraphics/vector3dgraphics1612/vector3dgraphics161200100/68697860-ecuador-sello-rep%C3%BAblica-de-la-bandera-de-ecuador-art-vectorial.jpg","https://images.freeimages.com/vhq/images/istock/previews/6226/62261462-seal-of-ecuador.jpg"];
@@ -19,6 +20,22 @@ class PaginaController extends Controller
         return view("inicio")->with("titulo", $titulo)->with("imagen", $imagen);
 
         
+=======
+        $titulo = "Realizado por Víctor";
+        $imagenes = [
+        "https://thumbs.dreamstime.com/z/mapa-y-bandera-de-ecuador-en-sello-de-goma-del-vintage-de-92497752.jpg",
+        "https://st.depositphotos.com/1031343/3088/v/950/depositphotos_30888379-stock-illustration-ecuador-stamp.jpg",
+        "https://previews.123rf.com/images/vector3dgraphics/vector3dgraphics1612/vector3dgraphics161200100/68697860-ecuador-sello-rep%C3%BAblica-de-la-bandera-de-ecuador-art-vectorial.jpg"];
+
+        //Envio de información de controlador a la vista
+
+        //return view("inicio",["titulo" => $titulo,"imagenes" => $imagenes]);
+        //return view("inicio", compact("titulo","imagenes"));
+
+        //Para mensajes pequeño ó alertas
+
+        return view("inicio")->with("titulo", $titulo)->with("imagenes", $imagenes);
+>>>>>>> 6865b63e555e5987806886c7515fc7f92efb272e
     }
 
 //Nosotros
