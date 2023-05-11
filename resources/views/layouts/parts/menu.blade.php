@@ -21,9 +21,10 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/intro">Intro</a></li>
               <li><a class="dropdown-item" href="/historia">Historia</a></li>
-              <li><a class="dropdown-item" href="/autoridades">Autoridades</a></li>
+              <li><a class="dropdown-item" href="#">Inicios</a></li>
+              <li><a class="dropdown-item" href="#">Actualidad</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">Personalidad MVIV</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -32,9 +33,12 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/datos">Datos Informativos</a></li>
+              <li><a class="dropdown-item" href="/autoridades">Autoridades</a></li>
+              <li><a class="dropdown-item" href="#">Consejo Ejecutivo</a></li>
               <li><a class="dropdown-item" href="simbolos">Simbolos IEP</a></li>
-              <li><a class="dropdown-item" href="/uniformes">Uniformes IEP</a></li>
               <li><a class="dropdown-item" href="/instalaciones">Instalaciones</a></li>
+              <li><a class="dropdown-item" href="/uniformes">Uniformes IEP</a></li>
+              <li><a class="dropdown-item" href="/dece">DECE</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">-</a></li>
             </ul>
@@ -49,11 +53,21 @@
               <li><a class="dropdown-item" href="/calif">Calificaciones</a></li>
               <li><a class="dropdown-item" href="/horario">Horario de clases</a></li>
               <li><a class="dropdown-item" href="/ofertaAcademica">Oferta Académica</a></li>
-              <li><a class="dropdown-item" href="/consejoEst">Consejo Estudiantil</a></li>
-              <li><a class="dropdown-item" href="/dece">DECE</a></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">Participación Estudiantil</a></li>
+              <li><a class="dropdown-item" href="#">Pasantias</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">-</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Estudiantil
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/consejoEst">Consejo Estudiantil</a></li>
+              <li><a class="dropdown-item" href="#">Cuadro de honor</a></li>
+              <li><a class="dropdown-item" href="#">Banda de Paz</a></li>
+              <li><a class="dropdown-item" href="#">Bastoneras</a></li>
             </ul>
           </li>
           <li class="nav-item">
