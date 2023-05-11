@@ -1,5 +1,7 @@
 @extends('layouts.base')
 
+@section('titulo', 'Oferta Ac.')
+
 @section('principal')
 
 

@@ -1,7 +1,13 @@
 @extends('layouts.base')
 
+@section('titulo', 'Inicio')
+
 @section('principal')
 <h1>Home Page Laravel</h1>
+
+<h1> {{ $titulo }} </h1>
+
+<h2>  {{ $imagen[0] }}</h2>
 
 <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">

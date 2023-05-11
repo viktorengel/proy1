@@ -1,5 +1,7 @@
 @extends('layouts.base')
 
+@section('titulo', 'Simbolos')
+
 @section('principal')
 
 
