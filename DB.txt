@@ -1,0 +1,8 @@
+CREATE TABLE `proy1`.`productos` 
+( `id` INT NOT NULL AUTO_INCREMENT 
+, `nombre` VARCHAR(100) NOT NULL 
+, `precio` FLOAT(10,2) NOT NULL 
+, `cantidad` INT NOT NULL 
+, `imagen` VARCHAR(255) NULL 
+, `descripcion` TEXT NULL 
+, PRIMARY KEY (`id`)) ENGINE = InnoDB; 

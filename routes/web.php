@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PaginaController;
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -68,3 +69,16 @@ Route::get("/dece", [PaginaController::class,"dece"]);
 
 //Contactenos
 Route::get("/contactenos", [PaginaController::class, "contactenos"]);
+
+//Productos
+Route::get('/productos',[ProductoController::class, "listar"]);
+
+Route::get('/productos/crear',[ProductoController::class, "crear"]); // cargar el form (creación)
+Route::post('/productos',[ProductoController::class, "guardar"]);
+
+Route::get('/productos/{id}',[ProductoController::class, "mostrar"]);
+
+Route::get('/productos/{id}/editar',[ProductoController::class, "editar"]); // cargar el form (edicion) 
+Route::put('/productos/{id}',[ProductoController::class, "modificar"]);
+
+Route::delete('/productos/{id}',[ProductoController::class, "eliminar"]);
