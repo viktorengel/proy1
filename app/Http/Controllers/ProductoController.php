@@ -17,7 +17,7 @@ class ProductoController extends Controller
     
     public function crear()
     {
-        
+        return view("producto.nuevo");
     }
 
     public function guardar(Request $request)

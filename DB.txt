@@ -6,3 +6,15 @@ CREATE TABLE `proy1`.`productos`
 , `imagen` VARCHAR(255) NULL 
 , `descripcion` TEXT NULL 
 , PRIMARY KEY (`id`)) ENGINE = InnoDB; 
+
+INSERT INTO `productos` (`id`, `nombre`, `precio`, 
+`cantidad`, `imagen`, `descripcion`) VALUES (NULL, 
+'teclado', '28.75', '17', 
+'https://toners.ec/wp-content/uploads/2023/04/Teclado-havit-KB500L_1.jpg', 
+'Teclado gamer');
+
+INSERT INTO `productos` (`id`, `nombre`, `precio`,
+ `cantidad`, `imagen`, `descripcion`) VALUES (NULL, 
+ 'Mouse', '10.45', '25', 
+ 'https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/m171/gallery/m171-gallery-red-1.png?v=1', 
+ 'Mouse ergonomico');
