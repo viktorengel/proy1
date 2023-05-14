@@ -71,14 +71,14 @@ Route::get("/dece", [PaginaController::class,"dece"]);
 Route::get("/contactenos", [PaginaController::class, "contactenos"]);
 
 //Productos
-Route::get('/productos',[ProductoController::class, "listar"]);
+Route::get('/producto',[ProductoController::class, "listar"]);
 
-Route::get('/productos/crear',[ProductoController::class, "crear"]); // cargar el form (creación)
-Route::post('/productos',[ProductoController::class, "guardar"]);
+Route::get('/producto/crear',[ProductoController::class, "crear"]); // cargar el form (creación)
+Route::post('/producto',[ProductoController::class, "guardar"]);
 
-Route::get('/productos/{id}',[ProductoController::class, "mostrar"]);
+Route::get('/producto/{id}',[ProductoController::class, "mostrar"]);
 
-Route::get('/productos/{id}/editar',[ProductoController::class, "editar"]); // cargar el form (edicion) 
-Route::put('/productos/{id}',[ProductoController::class, "modificar"]);
+Route::get('/producto/{id}/editar',[ProductoController::class, "editar"]); // cargar el form (edicion) 
+Route::put('/producto/{id}',[ProductoController::class, "modificar"]);
 
-Route::delete('/productos/{id}',[ProductoController::class, "eliminar"]);
+Route::delete('/producto/{id}',[ProductoController::class, "eliminar"]);

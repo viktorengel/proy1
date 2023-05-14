@@ -1,5 +1,5 @@
 
-<a href="/productos/crear">Nuevo producto</a>
+<a href="/producto/crear">Nuevo producto</a>
 
 <table border="1">
         <tr>

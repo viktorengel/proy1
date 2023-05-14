@@ -22,7 +22,16 @@ class ProductoController extends Controller
 
     public function guardar(Request $request)
     {
-        
+        $producto = [
+            "nombre" => $request->nombre,
+            "precio" => $request->precio,
+            "cantidad" => $request->cantidad,
+            "imagen" => $request->imagen,
+            "descripcion" => $request->descripcion,
+        ];
+
+        DB::table("productos")->insert($producto);
+        return redirect("/producto");
     }
 
     public function mostrar($id)
