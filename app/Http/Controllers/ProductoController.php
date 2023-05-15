@@ -11,7 +11,6 @@ class ProductoController extends Controller
     public function listar()
     {
         $productos = DB::select("select * from productos");
-
         return view("producto.listar", compact("productos"));
     }
     
@@ -47,7 +46,16 @@ class ProductoController extends Controller
 
     public function modificar($id, Request $request)
     {
-        
+        $producto = [
+            "nombre" => $request->nombre,
+            "precio" => $request->precio,
+            "cantidad" => $request->cantidad,
+            "imagen" => $request->imagen,
+            "descripcion" => $request->descripcion,
+        ];
+
+        DB::table("productos")->where('id', $id)->update($producto);
+        return redirect("/producto");
     }
 
     public function eliminar($id)

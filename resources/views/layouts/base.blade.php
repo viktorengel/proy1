@@ -33,8 +33,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
         <!-- Startup CSS (Styles for all blocks) - Remove ".min" if you would edit a css code -->
-        <link rel="stylesheet" href="{!! asset('css/style.min.css') !!}">
-        <link rel="stylesheet" href="{!! asset('css/framework.min.css') !!}">
+        {{-- <link rel="stylesheet" href="{!! asset('css/style.min.css') !!}"> --}}
+        {{-- <link rel="stylesheet" href="{!! asset('css/framework.min.css') !!}"> --}}
 
   </head>
   <body>
