@@ -18,8 +18,8 @@
             <td>{{ $prod -> precio }}</td>
             <td>{{ $prod -> cantidad }}</td>
             <td>{{ $prod -> cantidad * $prod -> precio }}</td>
-            <td><img src="{{  $prod -> imagen }}" alt="" width="100px"></td>
-            <td><a href="">editar</a></td>
+            <td><img src="{{ $prod -> imagen }}" alt="" width="100px"></td>
+            <td><a href="/producto/{{ $prod->id }}/editar">editar</a></td>
         </tr>
     @endforeach
 </table>

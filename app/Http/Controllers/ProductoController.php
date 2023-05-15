@@ -41,7 +41,8 @@ class ProductoController extends Controller
 
     public function editar($id)
     {
-        
+        $producto = DB::table("productos")->find($id);
+        return view("producto.editar", compact("producto"));
     }
 
     public function modificar($id, Request $request)
