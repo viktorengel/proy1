@@ -21,11 +21,20 @@ class ProductoController extends Controller
 
     public function guardar(Request $request)
     {
+        //subir la imagen
+        $direccion_imagen = "";
+        if($file = $request->file("imagen")){
+            $direccion_imagen = time() . "-" . $file->getClientOriginalName();
+            $file->move("imagen/", $direccion_imagen);
+
+            $direccion_imagen = "imagenes/" . $direccion_imagen;
+        }
+
         $producto = [
             "nombre" => $request->nombre,
             "precio" => $request->precio,
             "cantidad" => $request->cantidad,
-            "imagen" => $request->imagen,
+            "imagen" => $direccion_imagen,
             "descripcion" => $request->descripcion,
         ];
 

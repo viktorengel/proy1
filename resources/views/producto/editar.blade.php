@@ -5,7 +5,7 @@
 @section('principal')
 <div class="container">
     <h1>Editar producto</h1>
-    <form action="/producto/{{$producto->id}}" method="post">
+    <form action="/producto/{{$producto->id}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('put')
 
@@ -19,7 +19,8 @@
         <input type="number" name="cantidad" class="form-control" step="1" value="{{$producto->cantidad}}">
         <br/>
         <label for="">Ingrese Imagen</label>
-        <input type="text" name="imagen" class="form-control" value="{{$producto->imagen}}">
+        {{-- <input type="text" name="imagen" class="form-control" value="{{$producto->imagen}}"> --}}
+        <input type="file" name="imagen" class="form-control" value="{{$producto->imagen}}>
         <br/>
         <label for="">Ingrese Descripción</label>
         <textarea name="descripción" class="form-control" cols="10" rows="3">{{$producto->id}}</textarea>

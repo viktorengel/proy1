@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Crear nuevo productos</h1>
-    <form action="/producto" method="post">
+    <form action="/producto" method="post" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="">Ingrese Nombre</label>
@@ -25,7 +25,8 @@
         <br>
         <div class="mb-3">
         <label for="">Ingrese Imagen</label>
-        <input type="text" name="imagen" class="form-control" placeholder="Imagen">
+        {{-- <input type="text" name="imagen" class="form-control" placeholder="Imagen"> --}}
+        <input type="file" name="imagen">
         </div>
         <br>
         <div class="mb-3">
