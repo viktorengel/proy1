@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Crear nuevo productos</h1>
-    <form action="/producto" method="post" enctype="multipart/form-data">
+    <form action="/productos" method="post" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="">Ingrese Nombre</label>

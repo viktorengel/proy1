@@ -5,7 +5,7 @@
 @section('principal')
 <div class="container">
     <h1>Lista de productos</h1>
-    <a href="/producto/crear">Nuevo producto</a>
+    <a href="/productos/crear">Nuevo producto</a>
 
     <table class="table table-responsive table-hover  table-bordered">
             <tr>
@@ -25,7 +25,7 @@
                 <td>{{ $prod -> cantidad }}</td>
                 <td>{{ $prod -> cantidad * $prod -> precio }}</td>
                 <td><img src="{{ $prod -> imagen }}" alt="" width="100px"></td>
-                <td><a href="/producto/{{ $prod->id }}/editar">editar</a></td>
+                <td><a href="/productos/{{ $prod->id }}/editar">editar</a></td>
             </tr>
         @endforeach
     </table>

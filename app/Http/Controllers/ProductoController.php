@@ -11,12 +11,12 @@ class ProductoController extends Controller
     public function listar()
     {
         $productos = DB::select("select * from productos");
-        return view("producto.listar", compact("productos"));
+        return view("productos.listar", compact("productos"));
     }
     
     public function crear()
     {
-        return view("producto.nuevo");
+        return view("productos.nuevo");
     }
 
     public function guardar(Request $request)
@@ -39,7 +39,7 @@ class ProductoController extends Controller
         ];
 
         DB::table("productos")->insert($producto);
-        return redirect("/producto");
+        return redirect("/productos");
     }
 
     public function mostrar($id)
@@ -50,7 +50,7 @@ class ProductoController extends Controller
     public function editar($id)
     {
         $producto = DB::table("productos")->find($id);
-        return view("producto.editar", compact("producto"));
+        return view("productos.editar", compact("producto"));
     }
 
     public function modificar($id, Request $request)
@@ -73,7 +73,7 @@ class ProductoController extends Controller
         ];
 
         DB::table("productos")->where('id', $id)->update($producto);
-        return redirect("/producto");
+        return redirect("/productos");
     }
 
     public function eliminar($id)

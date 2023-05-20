@@ -5,7 +5,7 @@
 @section('principal')
 <div class="container">
     <h1>Editar producto</h1>
-    <form action="/producto/{{$producto->id}}" method="post" enctype="multipart/form-data">
+    <form action="/productos/{{$producto->id}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('put')
 
