@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\PedidoController;
+
+use App\Http\Controllers\EspecialidadeController;
+use App\Http\Controllers\NiveleController;
+
 use App\Http\Controllers\PaginaController;
 use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
@@ -15,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Route::get('/hola', function () {
+Route::get('/', function () {
     return view('welcome');
-}); */
+});
 
 //Closure
 /* Route::get('/saludo', function(){
@@ -45,7 +51,7 @@ Route::get("/docs/9.x", function (){
 
 //Rutas con controlador
 
-Route::get("/", [PaginaController::class,"inicio"]);
+// Route::get("/", [PaginaController::class,"inicio"]);
  
 //Nosotros
 Route::get("/intro", [PaginaController::class,"intro"]);
@@ -82,3 +88,14 @@ Route::get('/productos/{id}/editar',[ProductoController::class, "editar"]); // c
 Route::put('/productos/{id}',[ProductoController::class, "modificar"]);
 
 Route::delete('/productos/{id}',[ProductoController::class, "eliminar"]);
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('clientes', ClienteController::class);
+Route::resource('pedidos', PedidoController::class);
+
+Route::resource('especialidades', EspecialidadeController::class);
+Route::resource('niveles', NiveleController::class);
